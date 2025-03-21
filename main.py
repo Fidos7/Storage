@@ -17,24 +17,19 @@ def product_sum():
     print(f"Celková cena všech produktů je {total}€")
 
 def lowest_price():
-    lowest_product = products[0]
+    min_price = min(x["price"] for x in products)
+    lowest_price_products = [x for x in products if x["price"] == min_price]
 
-    for product in products[1:]:
-
-        if product["price"] < lowest_product["price"]:
-            lowest_product = product
-
-    return lowest_product
+    print("\nProdukt(y) s nejnižší cenou:")
+    for x in lowest_price_products:
+        print(f"Název: {x['name']}, Cena: {x['price']}€")
 
 def highest_price():
-    highest_product = products[0]
-
-    for product in products[1:]:
-
-        if product["price"] > highest_product["price"]:
-            highest_product = product
-
-    return highest_product
+    max_price = max(x["price"] for x in products)
+    highest_price_products = [x for x in products if x["price"] == max_price]
+    print("\nProdukt(y) s nejvyšší cenou:")
+    for x in highest_price_products:
+        print(f"Název: {x['name']}, Cena: {x['price']}€")
 
 
 def search_product_by_name():
@@ -110,13 +105,10 @@ def menu():
         menu()
     elif choice == 3:
         lowest_price()
-        lowest_product = lowest_price()
-        print(f"Produkt s nejnižší cenou je: {lowest_product['name']}, {lowest_product['price']}€\n")
+        print("")
         menu()
     elif choice == 4:
         highest_price()
-        highest_product = highest_price()
-        print(f"Produkt s nejvyšší cenou je: {highest_product['name']}, {highest_product['price']}€\n")
         menu()
     elif choice == 5:
         product_sum()
