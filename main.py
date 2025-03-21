@@ -88,6 +88,10 @@ def menu():
         highest_product = highest_price()
         print(f"Produkt s nejvyšší cenou je: {highest_product['name']}, {highest_product['price']}€\n")
         menu()
+    elif choice == 5:
+        product_sum()
+        print("")
+        menu()
 
     else:
         print("Zadal jsi špatně!\n")
