@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00a2dd98-faa3-431d-b934-db73ee3488d6" name="Changes" comment="sum price">
+    <list default="true" id="00a2dd98-faa3-431d-b934-db73ee3488d6" name="Changes" comment="search by price function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -78,7 +78,7 @@
       <updated>1742497303163</updated>
       <workItem from="1742497304253" duration="2821000" />
       <workItem from="1742547865693" duration="899000" />
-      <workItem from="1742548984123" duration="5315000" />
+      <workItem from="1742548984123" duration="6655000" />
     </task>
     <task id="LOCAL-00001" summary="sum commit">
       <option name="closed" value="true" />
@@ -112,7 +112,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742555684341</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="search by name function">
+      <option name="closed" value="true" />
+      <created>1742559761646</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742559761646</updated>
+    </task>
+    <task id="LOCAL-00006" summary="search by price function">
+      <option name="closed" value="true" />
+      <created>1742560074140</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742560074140</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,10 +139,12 @@
     <MESSAGE value="lowest price" />
     <MESSAGE value="highest price" />
     <MESSAGE value="sum price" />
-    <option name="LAST_COMMIT_MESSAGE" value="sum price" />
+    <MESSAGE value="search by name function" />
+    <MESSAGE value="search by price function" />
+    <option name="LAST_COMMIT_MESSAGE" value="search by price function" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/storage$main.coverage" NAME="main Coverage Results" MODIFIED="1742558781990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/storage$main.coverage" NAME="main Coverage Results" MODIFIED="1742560545623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/storage$storage.coverage" NAME="storage Coverage Results" MODIFIED="1742548496549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
