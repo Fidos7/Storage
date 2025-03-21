@@ -37,7 +37,7 @@ def highest_price():
     return highest_product
 
 
-def search_product():
+def search_product_by_name():
     query = input("Zadejte název produktu pro vyhledání: ").lower()
     found_products = [p for p in products if query in p["name"].lower()]
 
@@ -48,7 +48,16 @@ def search_product():
     else:
         print("Žádný produkt nenalezen.")
 
+def search_product_by_price():
+    price = int(input("Zadejte přesnou cenu produktu: "))
+    found_products = [p for p in products if p["price"] == price]
 
+    if found_products:
+        print("\nNalezené produkty:")
+        for p in found_products:
+            print(f"Název: {p['name']}, Cena: {p['price']}€")
+    else:
+        print("\nŽádný produkt nebyl nalezen.")
 
 
 def print_products():
@@ -77,6 +86,7 @@ def menu():
     print("4. Produkt s nejvyšší cenou")
     print("5. Celková suma produktú")
     print("6. Vyhledat produkt podle názvu")
+    print("7. Vyhledat produkt podle ceny")
 
 
     choice = int(input("Volba: "))
@@ -107,7 +117,11 @@ def menu():
         print("")
         menu()
     elif choice == 6:
-        search_product()
+        search_product_by_name()
+        print("")
+        menu()
+    elif choice == 7:
+        search_product_by_price()
         print("")
         menu()
 
