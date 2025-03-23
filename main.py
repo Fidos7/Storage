@@ -31,6 +31,23 @@ def highest_price():
     for x in highest_price_products:
         print(f"Název: {x['name']}, Cena: {x['price']}€")
 
+def edit_product():
+    for i, x in enumerate(products, 1):
+        print(f"{i}. {x['name']} - {x['price']}€")
+
+    choice = int(input("\nVyberte číslo produktu k úpravě: ")) - 1
+    if not (0 <= choice < len(products)):
+        print("Neplatná volba!")
+        return
+
+    products[choice]["name"] = input("Nový název: ") or products[choice]["name"]
+    new_price = input("Nová cena: ")
+    if new_price.isdigit():
+        products[choice]["price"] = int(new_price)
+
+    print("Produkt upraven!")
+
+
 
 def search_product_by_name():
     name = input("Zadejte název produktu pro vyhledání: ").lower()
@@ -88,6 +105,7 @@ def menu():
     print("6. Vyhledat produkt podle názvu")
     print("7. Vyhledat produkt podle ceny")
     print("8. Pruměrná cena produktú")
+    print("9. Upravit jméno a cenu produktú\n")
 
 
     choice = int(input("Volba: "))
@@ -124,6 +142,10 @@ def menu():
         menu()
     elif choice == 8:
         average_price()
+        print("")
+        menu()
+    elif choice == 9:
+        edit_product()
         print("")
         menu()
 
